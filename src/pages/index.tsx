@@ -1,11 +1,11 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { useAppDispatch, useAppSelector } from "../app/hooks";
 import {
   decrement,
   increment,
   incrementByAmount,
   selectCount,
-} from "../features/counter/counterSlice";
+} from "../features/counter";
 
 const IndexPage: React.FC = () => {
   const dispatch = useAppDispatch();
